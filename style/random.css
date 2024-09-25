@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo dominante - Cinza escuro */
+body {
+    background-color: #2E2E2E;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF; /* Textos em branco para contraste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222121; /* Fundo cinza escuro */
+}
+
+.logo {
+    height: 16vh;
+    margin-left: 15px;
+}
+
+.logo img {
+    height: 16vh;
+    width: 150px;
+}
+
+.menu-nav {
+    width: 32%;
+    display: flex;
+}
+
+.menu-itens {
+    font-size: 20px;
+    width: 100%;
+    color: #CCCCCC; /* Cinza claro para os itens do menu */
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 15px;
+}
+
+.menu-itens a {
+    text-decoration: none;
+    color: #CCCCCC; /* Cinza claro */
+}
+
+.menu-itens a:hover{
+    color: #FFFFFF;
+    transition-delay: 0.2ms;
+}
+
+main {
+    width: 90%;
+    background-color: #363636;
+    margin: 10px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+    color: #CCCCCC;
+    margin-bottom: 30px;
+}
+
+.drinks-display {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Largura total do contêiner */
+    margin-top: 20px; /* Espaço superior */
+}
+
+.drinks-list {
+    display: grid; /* Usar grid para organizar os drinks */
+    grid-template-columns: repeat(3, 1fr); /* Três colunas de igual largura */
+    gap: 20px; /* Espaçamento entre os itens */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+}
+
+.drink {
+    background-color: #222121; /* Cor de fundo da caixa */
+    border: 1px solid #CCCCCC; /* Borda da caixa */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    height: 250px;
+    width: 250px;
+}
+
+.drink-title {
+    font-size: 18px; /* Tamanho da fonte do título */
+    color: #FFFFFF; /* Cor do texto do título */
+    margin: 5px 0; /* Margem superior e inferior */
+}
+
+.drink-img {
+    width: 60%; /* Largura total da imagem */
+    height: 40%; /* Mantém a proporção da imagem */ /* Altura máxima da imagem */
+    border-radius: 5px; /* Bordas arredondadas da imagem */
+    margin-bottom: 10px;
+}
+.ingredients-list{
+    list-style: none;
+}

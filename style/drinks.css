@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo dominante - Cinza escuro */
+body {
+    background-color: #2E2E2E;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF; /* Textos em branco para contraste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222121; /* Fundo cinza escuro */
+}
+
+.logo {
+    height: 16vh;
+    margin-left: 15px;
+}
+
+.logo img {
+    height: 16vh;
+    width: 150px;
+}
+
+.menu-nav {
+    width: 32%;
+    display: flex;
+}
+
+.menu-itens {
+    font-size: 20px;
+    width: 100%;
+    color: #CCCCCC; /* Cinza claro para os itens do menu */
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 15px;
+}
+
+.menu-itens a {
+    text-decoration: none;
+    color: #CCCCCC; /* Cinza claro */
+}
+
+.menu-itens a:hover{
+    color: #FFFFFF;
+    transition-delay: 0.2ms;
+}
+
+main {
+    background-color: #363636;
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+    color: #00FFFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.drinks-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.drink-item {
+    background-color: #444444;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.drink-item h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.drink-item p {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo dominante - Cinza escuro */
+body {
+    background-color: #2E2E2E;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF; /* Textos em branco para contraste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222121; /* Fundo cinza escuro */
+}
+
+.logo {
+    height: 16vh;
+    margin-left: 15px;
+}
+
+.logo img {
+    height: 16vh;
+    width: 150px;
+}
+
+.menu-nav {
+    width: 32%;
+    display: flex;
+}
+
+.menu-items {
+    font-size: 20px;
+    width: 100%;
+    color: #CCCCCC; /* Cinza claro para os itens do menu */
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 15px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #CCCCCC; /* Cinza claro */
+}
+
+.menu-items a:hover{
+    color: #FFFFFF;
+    transition-delay: 0.2ms;
+}
+
+main {
+    background-color: #363636;
+    margin: 10px 0;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #CCCCCC; /* Título da página em cinza claro */
+    margin-bottom: 20px;
+}
+
+.ingredients-tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as imagens */
+    max-width: 300px; /* Tamanho máximo da section */
+    width: 100%;
+}
+
+.ingredients-tips div {
+    position: relative;
+    width: 120px; /* Tamanho fixo do quadrado */
+    height: 140px; /* Tamanho fixo do quadrado */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o quadrado */
+    border-radius: 10%;
+}
+
+.ingredients-tips img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem sem distorcer */
+    background-position: center center;
+    background-size: cover;
+}
+
+.ingredients-tips .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Sobreposição escura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF; /* Texto branco */
+    font-size: 18px; /* Fonte aumentada */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10%;
+}
