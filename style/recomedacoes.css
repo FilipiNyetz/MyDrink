@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo dominante - Cinza escuro */
+body {
+    background-color: #2E2E2E;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF; /* Textos em branco para contraste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222121; /* Fundo cinza escuro */
+}
+
+.logo {
+    height: 16vh;
+    margin-left: 15px;
+}
+
+.logo img {
+    height: 16vh;
+    width: 150px;
+}
+
+.menu-nav {
+    width: 32%;
+    display: flex;
+}
+
+.menu-items {
+    font-size: 20px;
+    width: 100%;
+    color: #CCCCCC; /* Cinza claro para os itens do menu */
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 15px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #CCCCCC; /* Cinza claro */
+}
+
+.menu-items a:hover{
+    color: #FFFFFF;
+    transition-delay: 0.2ms;
+}
+
+main {
+    background-color: #363636;
+    margin: 10px 0;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caracteristicas-preferido{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100px;
+    font-size: 28px;
+}
+/* Estilo para a seção que contém os drinks recomendados */
+.drinks-display {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para a lista de drinks recomendados */
+.lista-recomendados {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem em várias linhas */
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+/* Estilo para cada item da lista */
+.drink-card {
+    border: 1px solid #ccc; /* Borda ao redor do card */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno do card */
+    width: 200px; /* Largura fixa para cada card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para efeito de profundidade */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para a imagem do drink */
+.drink-image img{
+    width: 150px;
+    height: 150px;
+}
+
+/* Estilo para os títulos e categorias */
+.drink-name {
+    font-size: 1.2em; /* Tamanho da fonte do nome do drink */
+    margin: 10px 0; /* Espaçamento em cima e embaixo do nome */
+}
+
+h3 {
+    margin: 5px 0; /* Espaçamento para os títulos de categoria e base */
+}
